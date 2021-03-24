@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.dashboard{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.dashboard-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+}
+
+.dashboard-sidebar li{
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    height: 80px;
+    background: #333333; 
+    margin: 5px 0;
+    font-size: 15px;
+    border-bottom: inset;
+}
+
+.dashboard-sidebar ul {
+    width: 100%;
+}
+
+.dashboard-sidebar ul li a {
+    text-decoration: none;
+    color: rgba(99, 110, 114,1.0);
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.dashboard-sidebar li i{
+    width: 60px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0 10%;
+    color: rgba(99, 110, 114,1.0);
+}
+
+.dashboard-sidebar li:hover {
+    background: rgba(9, 132, 227,0.1) ;
+    color: #fff !important; 
+}
+
+.dashboard-sidebar li:active {
+        color: #fff; 
+        background: rgba(9, 132, 227,1.0);
+}
+
+
+
+
+.container-info-user {
+    /* background: red; */
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.container-foto-user  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+}
+
+.container-foto-user  .foto{
+    background: url("../img/professor1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.container-foto-user .circulo-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 15px rgba(0,0,5,0.8);
+}
+
+
+.name-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(99, 110, 114,1.0);
+
+    /* background: chartreuse; */
+}
+
+ .container-buttons-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    /* background: chartreuse; */
+}
+
+.container-buttons-user button {
+    cursor: pointer;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 2%;
+    box-sizing: border-box;
+    border: solid 3px rgba(9, 132, 227,1.0);
+    background:  linear-gradient( 45deg, rgba(9, 132, 227,1.0), rgba(9, 132, 227,0.7), rgba(9, 132, 227,0.4), rgba(9, 132, 227,0.1) ); ;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    transition: all 600ms;
+}
+
+.container-buttons-user button:hover{
+    background: transparent;
+    transition: all 900ms;
+    color: rgba(9, 132, 227,1.0);
+
+}
